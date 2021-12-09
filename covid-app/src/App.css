@@ -1,0 +1,32 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin:0;
+}
+
+.color-white {
+  color:white!important;
+}
+
+.page{
+  text-align: center;
+  padding: 50px 20px;
+  min-height: 100vh;
+}
+
+.page_title {
+  margin-bottom: 10px;
+  font-size: 32px!important;
+}
+
+.page_subtitle {
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 860px) {
+  .page  {
+    padding: 70px 20px 50px;
+  }
+}
