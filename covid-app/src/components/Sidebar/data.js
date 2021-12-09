@@ -11,6 +11,10 @@ const SidebarData = [
     title: 'About',
     path: '/about',
   },
+  {
+    title: 'Contact',
+    path: '/contact',
+  },
 ];
 
 export { SidebarData as default };

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './index.css';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
+import SidebarData from './data';
 
 function Sidebar() {
   const [sidebar, setSidebar] = useState(false);
@@ -23,15 +24,11 @@ function Sidebar() {
               <AiIcons.AiOutlineClose />
             </div>
           </li>
-          <li className="nav-text">
-            <Link to="/about"><span>Statistics</span></Link>
-          </li>
-          <li className="nav-text">
-            <Link to="/about"><span>About</span></Link>
-          </li>
-          <li className="nav-text">
-            <Link to="/contact"><span>Contact us</span></Link>
-          </li>
+          {SidebarData.map((item) => (
+            <li key={item.title} className="nav-text">
+              <Link to={item.path}><span>{item.title}</span></Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </>
